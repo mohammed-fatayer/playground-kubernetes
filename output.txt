@@ -1,0 +1,427 @@
+Name:             nginx-deploy-748c667d99-cg9gq
+Namespace:        my-app
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 09 Jun 2023 13:40:33 +0000
+Labels:           app=nginx
+                  pod-template-hash=748c667d99
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.16
+IPs:
+  IP:           10.244.0.16
+Controlled By:  ReplicaSet/nginx-deploy-748c667d99
+Containers:
+  nginx:
+    Container ID:   docker://2a9ae32db73eb3df2f21ad5505061c8376f78f4ea547a9f9aeb33b29add97855
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 09 Jun 2023 13:40:36 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5qllj (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-5qllj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2m4s  default-scheduler  Successfully assigned my-app/nginx-deploy-748c667d99-cg9gq to minikube
+  Normal  Pulling    2m3s  kubelet            Pulling image "nginx"
+  Normal  Pulled     2m2s  kubelet            Successfully pulled image "nginx" in 1.060901s (1.0609809s including waiting)
+  Normal  Created    2m2s  kubelet            Created container nginx
+  Normal  Started    2m2s  kubelet            Started container nginx
+
+
+Name:             nginx-deploy-748c667d99-ztczt
+Namespace:        my-app
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 09 Jun 2023 13:40:33 +0000
+Labels:           app=nginx
+                  pod-template-hash=748c667d99
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.19
+IPs:
+  IP:           10.244.0.19
+Controlled By:  ReplicaSet/nginx-deploy-748c667d99
+Containers:
+  nginx:
+    Container ID:   docker://af20e094db8c1a1768463859574f9b5a60f51e7bde6400c1259bb9e3a8215481
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 09 Jun 2023 13:40:39 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-kdfkg (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-kdfkg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2m4s  default-scheduler  Successfully assigned my-app/nginx-deploy-748c667d99-ztczt to minikube
+  Normal  Pulling    2m3s  kubelet            Pulling image "nginx"
+  Normal  Pulled     119s  kubelet            Successfully pulled image "nginx" in 1.0375497s (3.5312985s including waiting)
+  Normal  Created    119s  kubelet            Created container nginx
+  Normal  Started    119s  kubelet            Started container nginx
+
+
+Name:             redis-deploy-b6d954fd8-bfn7r
+Namespace:        my-app
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 09 Jun 2023 13:40:33 +0000
+Labels:           app=redis
+                  pod-template-hash=b6d954fd8
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.18
+IPs:
+  IP:           10.244.0.18
+Controlled By:  ReplicaSet/redis-deploy-b6d954fd8
+Containers:
+  redis:
+    Container ID:   docker://5bceca053f8e87df1ee378c4fc3665e3607d2dd1b163ea02547aedd13de75777
+    Image:          redis
+    Image ID:       docker-pullable://redis@sha256:f9724694a0b97288d2255ff2b69642dfba7f34c8e41aaf0a59d33d10d8a42687
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 09 Jun 2023 13:40:38 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-nlfgk (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-nlfgk:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2m4s  default-scheduler  Successfully assigned my-app/redis-deploy-b6d954fd8-bfn7r to minikube
+  Normal  Pulling    2m3s  kubelet            Pulling image "redis"
+  Normal  Pulled     2m    kubelet            Successfully pulled image "redis" in 1.0877899s (3.2371656s including waiting)
+  Normal  Created    2m    kubelet            Created container redis
+  Normal  Started    2m    kubelet            Started container redis
+
+
+Name:             redis-deploy-b6d954fd8-rrml9
+Namespace:        my-app
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 09 Jun 2023 13:40:33 +0000
+Labels:           app=redis
+                  pod-template-hash=b6d954fd8
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.17
+IPs:
+  IP:           10.244.0.17
+Controlled By:  ReplicaSet/redis-deploy-b6d954fd8
+Containers:
+  redis:
+    Container ID:   docker://c45336f754712c042d3ea395773207dda399f89d95f6180570651ef03c5b5fec
+    Image:          redis
+    Image ID:       docker-pullable://redis@sha256:f9724694a0b97288d2255ff2b69642dfba7f34c8e41aaf0a59d33d10d8a42687
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Fri, 09 Jun 2023 13:40:37 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-967lk (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-967lk:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2m4s  default-scheduler  Successfully assigned my-app/redis-deploy-b6d954fd8-rrml9 to minikube
+  Normal  Pulling    2m3s  kubelet            Pulling image "redis"
+  Normal  Pulled     2m1s  kubelet            Successfully pulled image "redis" in 1.088894s (2.1493851s including waiting)
+  Normal  Created    2m1s  kubelet            Created container redis
+  Normal  Started    2m1s  kubelet            Started container redis
+
+
+Name:             strap-deploy-75cdddccc-c84ch
+Namespace:        my-app
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 09 Jun 2023 13:40:33 +0000
+Labels:           app=strap
+                  pod-template-hash=75cdddccc
+Annotations:      <none>
+Status:           Pending
+IP:               10.244.0.21
+IPs:
+  IP:           10.244.0.21
+Controlled By:  ReplicaSet/strap-deploy-75cdddccc
+Containers:
+  strap:
+    Container ID:   
+    Image:          strap
+    Image ID:       
+    Port:           <none>
+    Host Port:      <none>
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-l5q84 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-l5q84:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  2m4s                default-scheduler  Successfully assigned my-app/strap-deploy-75cdddccc-c84ch to minikube
+  Normal   Pulling    36s (x4 over 2m2s)  kubelet            Pulling image "strap"
+  Warning  Failed     35s (x4 over 117s)  kubelet            Failed to pull image "strap": rpc error: code = Unknown desc = Error response from daemon: pull access denied for strap, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+  Warning  Failed     35s (x4 over 117s)  kubelet            Error: ErrImagePull
+  Normal   BackOff    11s (x6 over 116s)  kubelet            Back-off pulling image "strap"
+  Warning  Failed     11s (x6 over 116s)  kubelet            Error: ImagePullBackOff
+
+
+Name:             strap-deploy-75cdddccc-kp9jb
+Namespace:        my-app
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Fri, 09 Jun 2023 13:40:33 +0000
+Labels:           app=strap
+                  pod-template-hash=75cdddccc
+Annotations:      <none>
+Status:           Pending
+IP:               10.244.0.20
+IPs:
+  IP:           10.244.0.20
+Controlled By:  ReplicaSet/strap-deploy-75cdddccc
+Containers:
+  strap:
+    Container ID:   
+    Image:          strap
+    Image ID:       
+    Port:           <none>
+    Host Port:      <none>
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pf2rc (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-pf2rc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  2m4s                default-scheduler  Successfully assigned my-app/strap-deploy-75cdddccc-kp9jb to minikube
+  Normal   Pulling    27s (x4 over 2m3s)  kubelet            Pulling image "strap"
+  Warning  Failed     26s (x4 over 118s)  kubelet            Failed to pull image "strap": rpc error: code = Unknown desc = Error response from daemon: pull access denied for strap, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+  Warning  Failed     26s (x4 over 118s)  kubelet            Error: ErrImagePull
+  Warning  Failed     15s (x6 over 117s)  kubelet            Error: ImagePullBackOff
+  Normal   BackOff    1s (x7 over 117s)   kubelet            Back-off pulling image "strap"
+Name:                   nginx-deploy
+Namespace:              my-app
+CreationTimestamp:      Fri, 09 Jun 2023 13:40:33 +0000
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=nginx
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=nginx
+  Containers:
+   nginx:
+    Image:        nginx
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   nginx-deploy-748c667d99 (2/2 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  2m5s  deployment-controller  Scaled up replica set nginx-deploy-748c667d99 to 2
+
+
+Name:                   redis-deploy
+Namespace:              my-app
+CreationTimestamp:      Fri, 09 Jun 2023 13:40:33 +0000
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=redis
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=redis
+  Containers:
+   redis:
+    Image:        redis
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   redis-deploy-b6d954fd8 (2/2 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  2m5s  deployment-controller  Scaled up replica set redis-deploy-b6d954fd8 to 2
+
+
+Name:                   strap-deploy
+Namespace:              my-app
+CreationTimestamp:      Fri, 09 Jun 2023 13:40:33 +0000
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=strap
+Replicas:               2 desired | 2 updated | 2 total | 0 available | 2 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=strap
+  Containers:
+   strap:
+    Image:        strap
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   strap-deploy-75cdddccc (2/2 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  2m5s  deployment-controller  Scaled up replica set strap-deploy-75cdddccc to 2
